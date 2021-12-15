@@ -31,6 +31,6 @@ app.post('/', (req, res) => {
     console.log(req.body)
 })
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT || PORT, () => {
     console.log("Server is running on port 5000");
 })
